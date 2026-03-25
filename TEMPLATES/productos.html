@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Samsung 2026 | Tecno-Hub</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1124a3708.js" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --samsung-blue: #034ea2;
+            --dark-bg: #1a1a1a;
+        }
+        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        /* Estilos de Tarjetas */
+        .product-card {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+        .card-img-top {
+            padding: 25px;
+            transition: transform 0.5s;
+        }
+        .product-card:hover .card-img-top {
+            transform: scale(1.05);
+        }
+
+        /* Badges y Etiquetas */
+        .badge-category {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .bg-premium { background-color: #ffd700; color: #333; }
+        .bg-innov { background-color: #8e44ad; color: #fff; }
+        .bg-best { background-color: #27ae60; color: #fff; }
+
+        /* Botones y Texto */
+        .price {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--samsung-blue);
+        }
+        .btn-samsung {
+            background-color: var(--samsung-blue);
+            color: white;
+            border-radius: 12px;
+            padding: 10px;
+            font-weight: 600;
+            border: none;
+        }
+        .btn-samsung:hover {
+            background-color: #023a7a;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero-shop {
+            background: linear-gradient(45deg, #034ea2, #000);
+            color: white;
+            padding: 80px 0;
+            border-radius: 0 0 50px 50px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-shop text-center shadow">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Galaxy Store 2026</h1>
+            <p class="lead">Tecnología de punta al alcance de tu mano en Bogotá</p>
+            <div class="mt-4">
+                <a href="../index.html" class="btn btn-outline-light px-4 py-2">
+                    <i class="fas fa-home me-2"></i>Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container pb-5">
+
+        <div class="d-flex align-items-center mb-4">
+            <h2 class="fw-bold m-0 text-dark">Serie Galaxy S</h2>
+            <div class="flex-grow-1 ms-3 border-bottom border-2"></div>
+        </div>
+        
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 product-card shadow-sm">
+                    <span class="badge-category bg-premium shadow-sm">El Rey</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThsZEVvzCiqqJOh1bVEtq3dmichZ7_P4Jmfg&s" class="card-img-top" alt="S24 Ultra">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Galaxy S24 Ultra</h5>
+                        <p class="text-muted small">Titanio, IA avanzada y S-Pen integrado.</p>
+                        <div class="price mb-3">$4.899.900</div>
+                        <button class="btn btn-samsung w-100">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 product-card shadow-sm">
+                    <img src="https://cdnx.jumpseller.com/tiquemobile/image/46802744/thumb/1440/1440?1711130727" class="card-img-top" alt="S24 Plus">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Galaxy S24+ Plus</h5>
+                        <p class="text-muted small">Pantalla QHD+ y rendimiento extremo.</p>
+                        <div class="price mb-3">$3.950.000</div>
+                        <button class="btn btn-samsung w-100">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 product-card shadow-sm">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_961078-MLA99489113208_112025-O.webp" class="card-img-top" alt="S23 FE">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Galaxy S23 FE</h5>
+                        <p class="text-muted small">La experiencia premium a mejor precio.</p>
+                        <div class="price mb-3">$2.450.000</div>
+                        <button class="btn btn-samsung w-100">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-4">
+            <h2 class="fw-bold m-0 text-dark">Serie Galaxy Z</h2>
+            <div class="flex-grow-1 ms-3 border-bottom border-2"></div>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card h-100 product-card shadow-sm">
+                    <span class="badge-category bg-innov shadow-sm">Innovación</span>
+                    <div class="row g-0 align-items-center">
+                        <div class="col-5">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUWxH9ZO4y0KiMajt4Y28bbDABydQs3S4eiQ&s" class="img-fluid p-3" alt="Z Fold">
+                        </div>
+                        <div class="col-7">
+                            <div class="card-body">
+                                <h5 class="fw-bold">Galaxy Z Fold 5</h5>
+                                <p class="text-muted small">Se abre como una tablet. Ideal para multitarea.</p>
+                                <div class="price mb-2">$6.200.000</div>
+                                <button class="btn btn-samsung px-4">Ver Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 product-card shadow-sm">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-5">
+                            <img src="https://tecnocelcol.com/wp-content/uploads/2024/10/SamGalaxyZFlip5-3_600x.png" class="img-fluid p-3" alt="Z Flip">
+                        </div>
+                        <div class="col-7">
+                            <div class="card-body">
+                                <h5 class="fw-bold">Galaxy Z Flip 5</h5>
+                                <p class="text-muted small">Compacto y con la mejor pantalla externa.</p>
+                                <div class="price mb-2">$3.100.000</div>
+                                <button class="btn btn-samsung px-4">Ver Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-4">
+            <h2 class="fw-bold m-0 text-dark">Serie Galaxy A</h2>
+            <div class="flex-grow-1 ms-3 border-bottom border-2"></div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 product-card shadow-sm text-center">
+                    <span class="badge-category bg-best shadow-sm">Más Vendido</span>
+                    <img src="https://carulla.vtexassets.com/arquivos/ids/24527400/Celular-SAMSUNG-A55-5G-256-GB-8-GB-RAM-Azul-Hielo-3526200_a.jpg?v=639065282111700000" class="card-img-top" alt="Galaxy A55">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Galaxy A55 5G</h5>
+                        <p class="text-muted small">Cámara nocturna increíble y 5G.</p>
+                        <div class="price mb-3">$1.750.000</div>
+                        <button class="btn btn-samsung w-100">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 product-card shadow-sm text-center">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_988984-MLA99554369938_122025-O.webp" class="card-img-top" alt="Galaxy A35">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Galaxy A35 5G</h5>
+                        <p class="text-muted small">Pantalla fluida y gran batería.</p>
+                        <div class="price mb-3">$1.350.000</div>
+                        <button class="btn btn-samsung w-100">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 product-card shadow-sm text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaXllZjBwqHSu6eUolWFcmedIIhLlptZ4AJg&s" class="card-img-top" alt="Galaxy A15">
+                    <div class="card-body">
+                        <h5 class="fw-bold">Galaxy A15</h5>
+                        <p class="text-muted small">Económico, fiable y moderno.</p>
+                        <div class="price mb-3">$680.000</div>
+                        <button class="btn btn-samsung w-100">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container text-center">
+            <h4 class="fw-bold mb-3">Tecno-Hub Bogotá</h4>
+            <p class="text-muted">Distribuidor autorizado de tecnología Samsung 2026.</p>
+            <div class="fs-3 mb-4">
+                <i class="fab fa-facebook mx-3"></i>
+                <i class="fab fa-instagram mx-3"></i>
+                <i class="fab fa-whatsapp mx-3"></i>
+            </div>
+            <p class="small text-secondary mb-0">© 2026 Todos los derechos reservados | Diseñado por Angel</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

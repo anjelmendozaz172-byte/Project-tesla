@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla AI & Robotics Catalogue 2026 | Tecno-Hub</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1124a3708.js" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --tesla-red: #cc0000;
+            --tesla-dark: #141010; /* Un poco más oscuro para mejor contraste */
+            --tesla-grey: #a2a3a5;
+        }
+        body { 
+            background-color: var(--tesla-dark); 
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 56px;
+        }
+        
+        /* Estilos de Tarjetas Estilo Tesla (Futuristas)*/
+        .tesla-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            transition: all 0.4s ease-in-out;
+            overflow: hidden;
+        }
+        .tesla-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        /* Imagen de Producto con Efecto */
+        .card-img-container {
+            padding: 20px;
+            background: rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+        }
+        .card-img-top {
+            max-height: 100%;
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.6s;
+        }
+        .tesla-card:hover .card-img-top {
+            transform: scale(1.08);
+        }
+
+        /* Títulos y Texto */
+        .product-title {
+            letter-spacing: 1px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .tech-spec-list {
+            font-size: 0.85rem;
+            color: var(--tesla-grey);
+            list-style: none;
+            padding: 0;
+            margin-bottom: 15px;
+        }
+        .tech-spec-list li { margin-bottom: 5px; }
+        .tech-spec-list i { color: var(--tesla-red); width: 20px; }
+
+        /* Precio y Botones */
+        .price-tag {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        .btn-tesla-outline {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            padding: 10px;
+            transition: 0.3s;
+        }
+        .btn-tesla-outline:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        .btn-tesla-red {
+            background-color: var(--tesla-red);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            padding: 10px;
+            transition: 0.3s;
+        }
+        .btn-tesla-red:hover {
+            background-color: #a30000;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero-tesla-catalogue {
+            height: 50vh;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6), var(--tesla-dark)), 
+                        url('https://digitalhub.fifa.com/transform/4802c114-6997-40da-b80c-07f075908298/Tesla-Optimus-Gen-2');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" alt="Tesla Logo" width="100" class="d-inline-block align-text-top invert-img" style="filter: invert(1);">
+                <span class="ms-2">AI & Robotics</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavTesla">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavTesla">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home me-1"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./productos.html"><i class="fas fa-mobile-alt me-1"></i>Celulares</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-tesla-catalogue">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold product-title">Tesla AI <span style="color: var(--tesla-red);">Ecosystem</span></h1>
+            <p class="lead text-muted">Explora la vanguardia de la robótica y la inteligencia artificial autónoma.</p>
+            <a href="../index.html" class="btn btn-outline-light mt-3 px-4"><i class="fas fa-arrow-left me-2"></i>Volver al Home</a>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        
+        <div class="d-flex align-items-center mb-5">
+            <h2 class="fw-bold m-0 text-white section-title">División de Robótica Humanoide</h2>
+            <div class="flex-grow-1 ms-3 border-bottom border-1 border-secondary"></div>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="card h-100 tesla-card shadow">
+                    <div class="card-img-container">
+                        <img src="https://elindependiente.mx/wp-content/uploads/2023/12/algo-3-13.jpg" class="card-img-top" alt="Optimus Gen 2">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Optimus Gen 2</h4>
+                        <p class="text-muted small">El robot humanoide más avanzado para tareas generales.</p>
+                        <ul class="tech-spec-list">
+                            <li><i class="fas fa-walking"></i> Marcha 30% más rápida que Gen 1.</li>
+                            <li><i class="fas fa-hand-paper"></i> Manos con 11 grados de libertad y sensores táctiles.</li>
+                            <li><i class="fas fa-brain"></i> Integración nativa con Tesla FSD AI.</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div class="price-tag m-0">$35.000 <small class="text-muted fs-6">USD</small></div>
+                            <button class="btn btn-tesla-red px-4">mas informacion</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 tesla-card shadow">
+                    <div class="card-img-container">
+                        <img src="https://img-new.cgtrader.com/items/3997929/980ddfdf81/tesla-optimus-gen-1-3d-model-980ddfdf81.webp" class="card-img-top" alt="Optimus Gen 1">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="product-title">Optimus Gen 1 <small class="text-muted"></small></h4>
+                        <p class="text-muted small">Modelo de desarrollo para investigación y entrenamiento de IA.</p>
+                        <ul class="tech-spec-list">
+                            <li><i class="fas fa-tools"></i> Totalmente programable mediante Tesla SDK.</li>
+                            <li><i class="fas fa-battery-full"></i> Batería de 2.3 kWh optimizada.</li>
+                            <li><i class="fas fa-vr-cardboard"></i> Compatible con entornos de simulación Dojo.</li>
+                        </ul>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div class="price-tag m-0">$20.000 <small class="text-muted fs-6"></small></div>
+                            <button class="btn btn-tesla-outline px-4">Mas Informacion</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center mb-5 mt-5">
+            <h2 class="fw-bold m-0 text-white section-title">Infraestructura y Computación de IA</h2>
+            <div class="flex-grow-1 ms-3 border-bottom border-1 border-secondary"></div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 tesla-card shadow text-center">
+                    <div class="card-img-container">
+                        <img src="https://media.somoselectricos.com/wp-content/uploads/2021/08/Tesla-Dojo.jpg" class="card-img-top" alt="Dojo Supercomputer">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="product-title">Dojo  Training Cloud</h5>
+                        <p class="text-muted small">Poder de computación para entrenar redes neuronales de video.</p>
+                        <ul class="tech-spec-list text-start d-inline-block">
+                            <li><i class="fas fa-bolt"></i> Arquitectura ExaPOD de 1.1 </li>
+                            <li><i class="fas fa-network-wired"></i> Ancho de banda de 900 TB/s.</li>
+                        </ul>
+                        <div class="price-tag">$150 <small class="text-muted fs-6"></small></div>
+                        <button class="btn btn-tesla-red w-100">mas informacion</button>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+    </div>
+
+    <footer class="py-5 text-center border-top border-secondary mt-5 bg-dark">
+        <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" alt="Tesla Logo" width="80" class="mb-3 invert-img" style="filter: invert(1); opacity: 0.5;">
+            <p class="text-muted small mb-0">Tesla Robotics Division © 2026 | Tecno-Hub Bogotá </p>
+            <p class="small text-secondary">Diseñado para la vanguardia tecnológica por Angel.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
